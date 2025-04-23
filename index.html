@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>PakSocialBoost - Professional Social Media Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth;}
+    body { font-family: 'Roboto', sans-serif; background-color: #f7fafc;}
+    .urdu { font-family: 'Noto Nastaliq Urdu', serif; direction: rtl;}
+    .gradient {
+      background: linear-gradient(90deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+    }
+    .faq-content { display: none;}
+    .faq.active .faq-content { display: block;}
+  </style>
+  <!-- Urdu Font -->
+  <link href="https://fonts.googleapis.com/earlyaccess/notonastaliqurdu.css" rel="stylesheet">
+</head>
+<body class="relative">
+
+<!-- Language Toggle -->
+<div class="flex justify-end items-center p-4 bg-blue-50">
+  <button id="lang-en" class="px-4 py-1 text-blue-700 font-semibold hover:bg-blue-100 rounded focus:outline-none border border-blue-200" >English</button>
+  <button id="lang-ur" class="px-4 py-1 ml-2 text-blue-700 font-semibold hover:bg-blue-100 rounded focus:outline-none border border-blue-200" >اردو</button>
+</div>
+
+<!-- Header -->
+<header class="gradient text-white shadow">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <div class="flex items-center">
+      <span class="text-2xl font-bold"><i class="fas fa-bolt text-yellow-400 mr-2"></i><span class="lang lang-en">PakSocialBoost</span><span class="lang lang-ur urdu hidden">پاک سوشل بوسٹ</span></span>
+    </div>
+    <nav class="space-x-6 text-lg font-semibold hidden md:block">
+      <a href="#services" class="hover:underline lang lang-en">Services</a>
+      <a href="#services" class="hover:underline lang lang-ur urdu hidden">سروسز</a>
+      <a href="#pricing" class="hover:underline lang lang-en">Pricing</a>
+      <a href="#pricing" class="hover:underline lang lang-ur urdu hidden">قیمت</a>
+      <a href="#stats" class="hover:underline lang lang-en">Statistics</a>
+      <a href="#stats" class="hover:underline lang lang-ur urdu hidden">اعداد و شمار</a>
+      <a href="#faq" class="hover:underline lang lang-en">FAQ</a>
+      <a href="#faq" class="hover:underline lang lang-ur urdu hidden">عمومی سوالات</a>
+      <a href="#contact" class="hover:underline lang lang-en">Contact</a>
+      <a href="#contact" class="hover:underline lang lang-ur urdu hidden">رابطہ کریں</a>
+    </nav>
+    <div class="space-x-4 hidden md:flex">
+      <button class="bg-white text-blue-600 font-bold px-4 py-1 rounded hover:bg-blue-100 lang lang-en">Login</button>
+      <button class="bg-yellow-400 text-blue-900 font-bold px-4 py-1 rounded hover:bg-yellow-300 lang lang-en">Sign Up</button>
+      <button class="bg-white text-blue-600 font-bold px-4 py-1 rounded hover:bg-blue-100 lang lang-ur urdu hidden">لاگ ان کریں</button>
+      <button class="bg-yellow-400 text-blue-900 font-bold px-4 py-1 rounded hover:bg-yellow-300 lang lang-ur urdu hidden">سائن اپ</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="gradient py-10 px-4">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center">
+    <div class="w-40 h-40 md:w-56 md:h-56 rounded-full border-8 border-blue-100 shadow-lg overflow-hidden flex-shrink-0 relative">
+      <img src="https://page.genspark.site/v1/base64_upload/abbb2818f68a365c0d11829dbc3b1ad1" alt="Profile Picture" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+    </div>
+    <div class="md:ml-10 mt-6 md:mt-0 text-white">
+      <h1 class="text-3xl md:text-4xl font-bold mb-3 lang lang-en">Professional Social Media Growth Services</h1>
+      <h1 class="text-3xl md:text-4xl font-bold mb-3 lang lang-ur urdu hidden">پروفیشنل سوشل میڈیا گروتھ سروسز</h1>
+      <p class="mb-5 text-lg lang lang-en">
+        Boost your influence with <b>real</b> and <b>safe</b> followers, views, and engagement across all major platforms. Local payment options & 24/7 support!
+      </p>
+      <p class="mb-5 text-lg lang lang-ur urdu hidden">
+        اپنی سوشل میڈیا پاور بڑھائیں! فالوورز اور ویوز حاصل کریں، مکمل مقامی پیمنٹ اور بہترین سپورٹ کے ساتھ۔
+      </p>
+      <a href="#services" class="inline-block bg-yellow-400 text-blue-800 px-6 py-2 rounded font-bold hover:bg-yellow-300 shadow lang lang-en">See Services</a>
+      <a href="#services" class="inline-block bg-yellow-400 text-blue-800 px-6 py-2 rounded font-bold hover:bg-yellow-300 shadow lang lang-ur urdu hidden">سروسز دیکھیں</a>
+    </div>
+  </div>
+</section>
+
+<!-- Service Categories Section -->
+<section id="services" class="py-14 bg-white px-4">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-bold mb-10 text-blue-900 text-center lang lang-en">Choose Your Platform</h2>
+    <h2 class="text-2xl font-bold mb-10 text-blue-900 text-center lang lang-ur urdu hidden">اپنا پلیٹ فارم منتخب کریں</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="bg-blue-50 hover:shadow-xl rounded-lg p-5 flex flex-col items-center text-center">
+        <span class="text-5xl text-pink-400 mb-3"><i class="fab fa-tiktok"></i></span>
+        <h3 class="text-lg font-bold mb-2 lang lang-en">TikTok Services</h3>
+        <h3 class="text-lg font-bold mb-2 lang lang-ur urdu hidden">ٹک ٹاک سروسز</h3>
+        <ul class="text-blue-800 lang lang-en">
+          <li>Followers</li><li>Likes</li><li>Views</li><li>Comments</li>
+        </ul>
+        <ul class="text-blue-800 lang lang-ur urdu hidden urdu">
+          <li>فالورز</li><li>پسندیدگیاں</li><li>ویوز</li><li>کمنٹس</li>
+        </ul>
+      </div>
+      <div class="bg-blue-50 hover:shadow-xl rounded-lg p-5 flex flex-col items-center text-center">
+        <span class="text-5xl text-pink-600 mb-3"><i class="fab fa-instagram"></i></span>
+        <h3 class="text-lg font-bold mb-2 lang lang-en">Instagram Services</h3>
+        <h3 class="text-lg font-bold mb-2 lang lang-ur urdu hidden">انسٹاگرام سروسز</h3>
+        <ul class="text-blue-800 lang lang-en">
+          <li>Followers</li><li>Likes</li><li>Views</li><li>Comments</li>
+        </ul>
+        <ul class="text-blue-800 lang lang-ur urdu hidden urdu">
+          <li>فالورز</li><li>پسندیدگیاں</li><li>ویوز</li><li>کمنٹس</li>
+        </ul>
+      </div>
+      <div class="bg-blue-50 hover:shadow-xl rounded-lg p-5 flex flex-col items-center text-center">
+        <span class="text-5xl text-red-500 mb-3"><i class="fab fa-youtube"></i></span>
+        <h3 class="text-lg font-bold mb-2 lang lang-en">YouTube Services</h3>
+        <h3 class="text-lg font-bold mb-2 lang lang-ur urdu hidden">یوٹیوب سروسز</h3>
+        <ul class="text-blue-800 lang lang-en">
+          <li>Subscribers</li><li>Likes</li><li>Views</li><li>Comments</li>
+        </ul>
+        <ul class="text-blue-800 lang lang-ur urdu hidden urdu">
+          <li>سبسکرائبرز</li><li>پسندیدگیاں</li><li>ویوز</li><li>کمنٹس</li>
+        </ul>
+      </div>
+      <div class="bg-blue-50 hover:shadow-xl rounded-lg p-5 flex flex-col items-center text-center">
+        <span class="text-5xl text-blue-700 mb-3"><i class="fab fa-facebook-square"></i></span>
+        <h3 class="text-lg font-bold mb-2 lang lang-en">Facebook Services</h3>
+        <h3 class="text-lg font-bold mb-2 lang lang-ur urdu hidden">فیس بک سروسز</h3>
+        <ul class="text-blue-800 lang lang-en">
+          <li>Followers</li><li>Likes</li><li>Views</li><li>Reactions</li>
+        </ul>
+        <ul class="text-blue-800 lang lang-ur urdu hidden urdu">
+          <li>فالورز</li><li>پسندیدگیاں</li><li>ویوز</li><li>ری اکشنز</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Tables Section -->
+<section id="pricing" class="py-14 bg-blue-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-10 text-blue-900 text-center lang lang-en">Affordable & Transparent Pricing</h2>
+    <h2 class="text-2xl font-bold mb-10 text-blue-900 text-center lang lang-ur urdu hidden">بہترین اور صاف قیمتیں</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <!-- TikTok -->
+      <div class="bg-white shadow-lg rounded-lg p-6 w-full sm:w-72">
+        <div class="flex items-center mb-4">
+          <i class="fab fa-tiktok text-2xl text-pink-400 mr-2"></i>
+          <h3 class="font-bold text-lg lang lang-en">TikTok</h3>
+          <h3 class="font-bold text-lg lang lang-ur urdu hidden">ٹک ٹاک</h3>
+        </div>
+        <ul class="mb-4 text-sm lang lang-en">
+          <li>Followers: <span class="text-blue-700 font-bold">$0.20/1k</span></li>
+          <li>Likes: <span class="text-blue-700 font-bold">$0.12/1k</span></li>
+          <li>Views: <span class="text-blue-700 font-bold">$0.05/1k</span></li>
+        </ul>
+        <ul class="mb-4 text-sm lang lang-ur urdu hidden urdu">
+          <li>فالورز: <span class="text-blue-700 font-bold">$0.20/1k</span></li>
+          <li>پسندیدگیاں: <span class="text-blue-700 font-bold">$0.12/1k</span></li>
+          <li>ویوز: <span class="text-blue-700 font-bold">$0.05/1k</span></li>
+        </ul>
+        <button class="bg-blue-600 text-white w-full py-2 rounded font-bold hover:bg-blue-700">Order Now</button>
+      </div>
+      <!-- Instagram -->
+      <div class="bg-white shadow-lg rounded-lg p-6 w-full sm:w-72">
+        <div class="flex items-center mb-4">
+          <i class="fab fa-instagram text-2xl text-pink-600 mr-2"></i>
+          <h3 class="font-bold text-lg lang lang-en">Instagram</h3>
+          <h3 class="font-bold text-lg lang lang-ur urdu hidden">انسٹاگرام</h3>
+        </div>
+        <ul class="mb-4 text-sm lang lang-en">
+          <li>Followers: <span class="text-blue-700 font-bold">$0.25/1k</span></li>
+          <li>Likes: <span class="text-blue-700 font-bold">$0.13/1k</span></li>
+          <li>Views: <span class="text-blue-700 font-bold">$0.07/1k</span></li>
+        </ul>
+        <ul class="mb-4 text-sm lang lang-ur urdu hidden urdu">
+          <li>فالورز: <span class="text-blue-700 font-bold">$0.25/1k</span></li>
+          <li>پسندیدگیاں: <span class="text-blue-700 font-bold">$0.13/1k</span></li>
+          <li>ویوز: <span class="text-blue-700 font-bold">$0.07/1k</span></li>
+        </ul>
+        <button class="bg-blue-600 text-white w-full py-2 rounded font-bold hover:bg-blue-700">Order Now</button>
+      </div>
+      <!-- YouTube -->
+      <div class="bg-white shadow-lg rounded-lg p-6 w-full sm:w-72">
+        <div class="flex items-center mb-4">
+          <i class="fab fa-youtube text-2xl text-red-500 mr-2"></i>
+          <h3 class="font-bold text-lg lang lang-en">YouTube</h3>
+          <h3 class="font-bold text-lg lang lang-ur urdu hidden">یوٹیوب</h3>
+        </div>
+        <ul class="mb-4 text-sm lang lang-en">
+          <li>Subscribers: <span class="text-blue-700 font-bold">$0.30/1k</span></li>
+          <li>Likes: <span class="text-blue-700 font-bold">$0.17/1k</span></li>
+          <li>Views: <span class="text-blue-700 font-bold">$0.08/1k</span></li>
+        </ul>
+        <ul class="mb-4 text-sm lang lang-ur urdu hidden urdu">
+          <li>سبسکرائبرز: <span class="text-blue-700 font-bold">$0.30/1k</span></li>
+          <li>پسندیدگیاں: <span class="text-blue-700 font-bold">$0.17/1k</span></li>
+          <li>ویوز: <span class="text-blue-700 font-bold">$0.08/1k</span></li>
+        </ul>
+        <button class="bg-blue-600 text-white w-full py-2 rounded font-bold hover:bg-blue-700">Order Now</button>
+      </div>
+      <!-- Facebook -->
+      <div class="bg-white shadow-lg rounded-lg p-6 w-full sm:w-72">
+        <div class="flex items-center mb-4">
+          <i class="fab fa-facebook-square text-2xl text-blue-700 mr-2"></i>
+          <h3 class="font-bold text-lg lang lang-en">Facebook</h3>
+          <h3 class="font-bold text-lg lang lang-ur urdu hidden">فیس بک</h3>
+        </div>
+        <ul class="mb-4 text-sm lang lang-en">
+          <li>Followers: <span class="text-blue-700 font-bold">$0.22/1k</span></li>
+          <li>Likes: <span class="text-blue-700 font-bold">$0.15/1k</span></li>
+          <li>Views: <span class="text-blue-700 font-bold">$0.09/1k</span></li>
+        </ul>
+        <ul class="mb-4 text-sm lang lang-ur urdu hidden urdu">
+          <li>فالورز: <span class="text-blue-700 font-bold">$0.22/1k</span></li>
+          <li>پسندیدگیاں: <span class="text-blue-700 font-bold">$0.15/1k</span></li>
+          <li>ویوز: <span class="text-blue-700 font-bold">$0.09/1k</span></li>
+        </ul>
+        <button class="bg-blue-600 text-white w-full py-2 rounded font-bold hover:bg-blue-700">Order Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Payment Methods Section -->
+<section class="py-12 bg-white" id="payment">
+  <div class="max-w-5xl mx-auto px-4 md:flex md:items-center md:justify-between">
+    <div>
+      <h2 class="text-2xl font-bold mb-3 text-blue-900 lang lang-en">Secure Local Payment Methods</h2>
+      <h2 class="text-2xl font-bold mb-3 text-blue-900 lang lang-ur urdu hidden">محفوظ مقامی پیمنٹ میتھڈز</h2>
+      <p class="mb-2 lang lang-en">Pay easily with JazzCash, EasyPaisa, Upaisa, SadaPay, NayaPay and more. All transactions are processed securely and instantly.</p>
+      <p class="mb-2 lang lang-ur urdu hidden">آسانی سے جاز کیش، ایزی پیسہ، اپایسہ، صدہ پے، نیا پے کے ذریعے ادائیگی کریں۔</p>
+    </div>
+    <div class="flex flex-wrap items-center gap-6 text-5xl mt-8 md:mt-0">
+      <img src="https://seeklogo.com/images/J/jazzcash-logo-43E67E7ACB-seeklogo.com.png?v=638455673460000000" alt="Jazzcash" class="h-14 w-14 bg-gray-100 p-2 rounded shadow">
+      <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2020/11/5fbb0293c97e1.png" alt="Easypaisa" class="h-14 w-14 bg-gray-100 p-2 rounded shadow">
+      <img src="https://seeklogo.com/images/S/sadapay-logo-D3E4ED901C-seeklogo.com.png" alt="Sadapay" class="h-14 w-14 bg-gray-100 p-2 rounded shadow">
+      <img src="https://cdn-icons-png.flaticon.com/512/7208/7208609.png" alt="Upaisa" class="h-14 w-14 bg-gray-100 p-2 rounded shadow">
+      <img src="https://play-lh.googleusercontent.com/mwznrrb9UnlkviuDfjQ0RJSeOF_e4jt_qCZTkWQA_J1jKrmOYx6540wIp7TjQbBKj7A=w600-h300-pc0xffffff" alt="Nayapay" class="h-14 w-14 bg-gray-100 p-2 rounded shadow">
+    </div>
+  </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="py-12 bg-blue-50" id="stats">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-center mb-8 text-blue-900 lang lang-en">Our Achievements Speak For Themselves</h2>
+    <h2 class="text-2xl font-bold text-center mb-8 text-blue-900 lang lang-ur urdu hidden">ہماری کامیابیاں</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="text-3xl font-bold text-blue-700">5,000+</div>
+        <div class="mt-2 text-blue-900 lang lang-en">Customers</div>
+        <div class="mt-2 text-blue-900 lang lang-ur urdu hidden urdu">کسٹمرز</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-blue-700">40,000+</div>
+        <div class="mt-2 text-blue-900 lang lang-en">Payments</div>
+        <div class="mt-2 text-blue-900 lang lang-ur urdu hidden urdu">ادائیگیاں</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-blue-700">99.9%</div>
+        <div class="mt-2 text-blue-900 lang lang-en">Uptime</div>
+        <div class="mt-2 text-blue-900 lang lang-ur urdu hidden urdu">یپ ٹائم</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-blue-700">24/7</div>
+        <div class="mt-2 text-blue-900 lang lang-en">Support</div>
+        <div class="mt-2 text-blue-900 lang lang-ur urdu hidden urdu">سپورٹ</div>
+      </div>
+    </div>
+    <div class="mt-12 bg-white rounded-lg shadow p-6">
+      <canvas id="statsChart" class="w-full" height="100"></canvas>
+    </div>
+    <script>
+      window.onload = function() {
+        let chart = document.getElementById('statsChart').getContext('2d');
+        new Chart(chart, {
+          type: 'bar',
+          data: {
+            labels: ['TikTok', 'Instagram', 'YouTube', 'Facebook'],
+            datasets: [{
+              label: 'Orders (in thousands)',
+              data: [17, 12, 7, 4],
+              backgroundColor: ['#F472B6','#FB7185','#F87171','#60A5FA'],
+            }]
+          },
+          options: {
+            plugins: {
+              legend: {display: false}
+            },
+            scales: {y: {beginAtZero: true, ticks: {stepSize: 2}}}
+          }
+        });
+      }
+    </script>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-14 bg-white" id="testimonials">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-center mb-8 text-blue-900 lang lang-en">Real Customer Testimonials</h2>
+    <h2 class="text-2xl font-bold text-center mb-8 text-blue-900 lang lang-ur urdu hidden">کسٹمر ریویوز</h2>
+    <div class="grid gap-10 md:grid-cols-2">
+      <div class="bg-blue-50 rounded-lg p-6 shadow">
+        <div class="flex items-center mb-3">
+          <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="" class="w-10 h-10 rounded-full mr-3 border-2 border-blue-200">
+          <span class="font-semibold lang lang-en">Ali Raza</span>
+          <span class="font-semibold lang lang-ur urdu hidden">علی رضا</span>
+          <span class="text-yellow-400 ml-2"><i class="fas fa-star"></i> 5.0</span>
+        </div>
+        <p class="lang lang-en">
+          Best experience ever! Order delivery was fast and my TikTok account grew in hours. Recommended!
+        </p>
+        <p class="lang lang-ur urdu hidden urdu">
+          شاندار سروس! میرا ٹک ٹاک اکاؤنٹ فوراً بڑ ھ گیا۔ سب کو ریکمنڈ کروں گا!
+        </p>
+      </div>
+      <div class="bg-blue-50 rounded-lg p-6 shadow">
+        <div class="flex items-center mb-3">
+          <img src="https://randomuser.me/api/portraits/women/53.jpg" alt="" class="w-10 h-10 rounded-full mr-3 border-2 border-blue-200">
+          <span class="font-semibold lang lang-en">Fatima Khan</span>
+          <span class="font-semibold lang lang-ur urdu hidden">فاطمہ خان</span>
+          <span class="text-yellow-400 ml-2"><i class="fas fa-star"></i> 5.0</span>
+        </div>
+        <p class="lang lang-en">
+          Local payment options made it so easy. Customer support was active even at midnight!
+        </p>
+        <p class="lang lang-ur urdu hidden urdu">
+          مقامی پیمنٹ سے بڑا فائدہ ہوا۔ کسٹمر سپورٹ ہروقت ایکٹو ہے!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-14 bg-blue-50">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-center mb-8 text-blue-900 lang lang-en">Frequently Asked Questions</h2>
+    <h2 class="text-2xl font-bold text-center mb-8 text-blue-900 lang lang-ur urdu hidden">عمومی سوالات</h2>
+    <div class="space-y-4" id="faq-list">
+      <div class="faq bg-white rounded-lg shadow px-5 py-4 cursor-pointer">
+        <div class="flex items-center">
+          <span class="font-semibold lang lang-en">How fast will my order be delivered?</span>
+          <span class="font-semibold lang lang-ur urdu hidden">میرا آرڈر کتنی جلدی ملے گا؟</span>
+          <i class="fas fa-chevron-down ml-2 text-gray-400"></i>
+        </div>
+        <div class="faq-content text-blue-800 mt-2 lang lang-en">
+          Most orders are completed within 5-30 minutes depending on quantity and platform.
+        </div>
+        <div class="faq-content text-blue-800 mt-2 lang lang-ur urdu hidden urdu">
+          زیادہ تر آرڈرز صرف 5 سے 30 منٹ میں مکمل ہو جاتے ہیں۔
+        </div>
+      </div>
+      <div class="faq bg-white rounded-lg shadow px-5 py-4 cursor-pointer">
+        <div class="flex items-center">
+          <span class="font-semibold lang lang-en">Is my account safe?</span>
+          <span class="font-semibold lang lang-ur urdu hidden">کیا میرا اکاؤنٹ محفوظ ہے؟</span>
+          <i class="fas fa-chevron-down ml-2 text-gray-400"></i>
+        </div>
+        <div class="faq-content text-blue-800 mt-2 lang lang-en">
+          Yes, we use 100% safe delivery methods. No password required.
+        </div>
+        <div class="faq-content text-blue-800 mt-2 lang lang-ur urdu hidden urdu">
+          جی ہاں، ہم مکمل محفوظ طریقہ استعمال کرتے ہیں۔ پاسورڈ کی ضرورت نہیں۔
+        </div>
+      </div>
+      <div class="faq bg-white rounded-lg shadow px-5 py-4 cursor-pointer">
+        <div class="flex items-center">
+          <span class="font-semibold lang lang-en">What payment options are available?</span>
+          <span class="font-semibold lang lang-ur urdu hidden">کون سی پیمنٹ آپشن دستیاب ہیں؟</span>
+          <i class="fas fa-chevron-down ml-2 text-gray-400"></i>
+        </div>
+        <div class="faq-content text-blue-800 mt-2 lang lang-en">
+          We accept JazzCash, EasyPaisa, Upaisa, SadaPay, NayaPay and more.
+        </div>
+        <div class="faq-content text-blue-800 mt-2 lang lang-ur urdu hidden urdu">
+          ہم جاز کیش، ایزی پیسہ، اپایسہ، صدہ پے اور نیا پے قبول کرتے ہیں۔
+        </div>
+      </div>
+      <div class="faq bg-white rounded-lg shadow px-5 py-4 cursor-pointer">
+        <div class="flex items-center">
+          <span class="font-semibold lang lang-en">Can I track my order?</span>
+          <span class="font-semibold lang lang-ur urdu hidden">کیا میں اپنا آرڈر ٹریک کر سکتا ہوں؟</span>
+          <i class="fas fa-chevron-down ml-2 text-gray-400"></i>
+        </div>
+        <div class="faq-content text-blue-800 mt-2 lang lang-en">
+          Yes, after login you can track your orders through your dashboard.
+        </div>
+        <div class="faq-content text-blue-800 mt-2 lang lang-ur urdu hidden urdu">
+          جی ہاں، لاگ ان کے بعد آپ اپنے آرڈرز کا سٹیٹس دیکھ سکتے ہیں۔
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact" class="py-14 bg-white">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-center mb-8 text-blue-900 lang lang-en">Contact Us</h2>
+    <h2 class="text-2xl font-bold text-center mb-8 text-blue-900 lang lang-ur urdu hidden">ہم سے رابطہ کریں</h2>
+    <form class="bg-blue-50 rounded-lg p-8 shadow space-y-5">
+      <div class="md:flex gap-4">
+        <input type="text" placeholder="Your Name" class="w-full md:w-1/2 p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-400 mb-2 lang lang-en">
+        <input type="text" placeholder="نام" class="w-full md:w-1/2 p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-400 mb-2 lang lang-ur urdu hidden urdu">
+        <input type="email" placeholder="Email Address" class="w-full md:w-1/2 p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-400 mb-2 lang lang-en">
+        <input type="email" placeholder="ای میل" class="w-full md:w-1/2 p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-400 mb-2 lang lang-ur urdu hidden urdu">
+      </div>
+      <textarea placeholder="How can we help you?" rows="4" class="w-full p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-400 mb-2 lang lang-en"></textarea>
+      <textarea placeholder="ہم آپ کی کس طرح مدد کر سکتے ہیں؟" rows="4" class="w-full p-3 rounded border focus:outline-none focus:ring-2 focus:ring-blue-400 mb-2 lang lang-ur urdu hidden urdu"></textarea>
+      <button type="submit" class="bg-blue-700 text-white px-8 py-2 rounded hover:bg-blue-800 font-bold lang lang-en">Send Message</button>
+      <button type="submit" class="bg-blue-700 text-white px-8 py-2 rounded hover:bg-blue-800 font-bold lang lang-ur urdu hidden">پیغام بھیجیں</button>
+    </form>
+    <div class="flex justify-between items-center mt-6 px-2">
+      <span class="lang lang-en"><i class="fas fa-envelope text-blue-700"></i> mustafanazim561@gmail.com</span>
+      <span class="lang lang-ur urdu hidden"><i class="fas fa-envelope text-blue-700"></i> mustafanazim561@gmail.com</span>
+      <span class="ml-2 lang lang-en"><i class="fas fa-phone text-blue-700"></i> 03105784772</span>
+      <span class="ml-2 lang lang-ur urdu hidden"><i class="fas fa-phone text-blue-700"></i> 03105784772</span>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-800 text-blue-100 py-8 text-center">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+    <div class="mb-4 md:mb-0">
+      <span class="font-bold text-lg lang lang-en">PakSocialBoost &copy; 2024</span>
+      <span class="font-bold text-lg lang lang-ur urdu hidden urdu">پاک سوشل بوسٹ &copy; 2024</span>
+    </div>
+    <div class="space-x-4">
+      <a href="#services" class="hover:underline lang lang-en">Services</a>
+      <a href="#services" class="hover:underline lang lang-ur urdu hidden">سروسز</a>
+      <a href="#pricing" class="hover:underline lang lang-en">Pricing</a>
+      <a href="#pricing" class="hover:underline lang lang-ur urdu hidden">قیمت</a>
+      <a href="#contact" class="hover:underline lang lang-en">Contact</a>
+      <a href="#contact" class="hover:underline lang lang-ur urdu hidden">رابطہ کریں</a>
+    </div>
+    <div class="mt-4 md:mt-0">
+      <span class="text-blue-100 text-sm lang lang-en">Designed by Genspark AI</span>
+      <span class="text-blue-100 text-sm lang lang-ur urdu hidden urdu">ڈیزائن بائی Genspark AI</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Language Toggle Script and FAQ toggle script -->
+<script>
+  // Language toggle
+  document.getElementById('lang-en').addEventListener('click', function() {
+    document.querySelectorAll('.lang-en').forEach(e => e.classList.remove('hidden'));
+    document.querySelectorAll('.lang-ur').forEach(e => e.classList.add('hidden'));
+  });
+  document.getElementById('lang-ur').addEventListener('click', function() {
+    document.querySelectorAll('.lang-en').forEach(e => e.classList.add('hidden'));
+    document.querySelectorAll('.lang-ur').forEach(e => e.classList.remove('hidden'));
+  });
+
+  // FAQ toggle
+  document.querySelectorAll('#faq-list .faq').forEach(faq => {
+    faq.addEventListener('click', function() {
+      faq.classList.toggle('active');
+    });
+  })
+</script>
+</body>
+</html>
+
